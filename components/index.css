@@ -1,0 +1,124 @@
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  background-color: #D0D3D4;
+  width: 100%;
+  height: 110px; 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+}
+.form_input {
+  height: 100%;
+}
+.input {
+  width: 70%;
+}
+.input form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input input {
+  width: 400px;
+  height: 35px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+.input input::-webkit-input-placeholder {
+  text-align: center;
+}
+.input input:-ms-input-placeholder {
+  text-align: center;
+}
+.input input::placeholder {
+  text-align: center;
+}
+.button {
+  width: 150px;
+  padding: 30px;
+}
+.button input {
+  height: 35px;
+  border-radius: 7px;
+  background-color: #D11D05;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  -webkit-box-shadow: 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px gray;
+}
+.button input:hover {
+  cursor: pointer;
+}
+.button input:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+.text{
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 30px;
+  justify-content: flex-end;
+}
+.text p {
+  text-align: center;
+  color: #D11D05;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 700px) {
+  .button button {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    height: 170px;
+}
+  .text {
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+  }
+  .input {
+    width: 100%;
+  }
+  .form_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    padding: 0px;
+    margin-top: 15px;
+  }
+}
+

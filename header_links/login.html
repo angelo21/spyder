@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <link rel=icon href=../favicon.ico>
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <script src="https://use.fontawesome.com/380e35aab5.js"></script>
+
+    </head>
+    <body>
+        <div class="sidebar"></div>
+        <div id="top">
+            <div id="sale">
+                <p>Free two day shipping on all orders over $75 USD</p>
+            </div><!--end sale-->
+            <div id="sign-up">
+                <ul>
+                    <li><a href="signup.html">Email Sign up</a></li>
+                    <li class="logout"><a href="login.html" class="welcome">Login</a></li>
+                    <li>
+                        <i class="fa fa-shopping-cart" aria-hidden="true"><span id="cart">0</span></i>
+                    </li>
+                </ul>
+            </div><!--end sign-up-->
+        </div><!--end top-->
+        
+        <div class="cart_update">
+            <div class="cart_wrapper">
+                <p>You have <span class="cart_update_text"></span> item(s) in your cart.</p>
+                <button class="cart_update_button">Remove Items</button>
+            </div><!--cart_wrapper-->
+        </div><!--cart_update-->
+        
+        <div id="header">
+            <div class="hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div><!--end hamburger-->
+            <div class="logo_wrapper">
+                <div id="logo">
+                    <a href ="../index.html"><img src="../images/main/logo.png"></a>
+                </div><!--end logo-->
+            </div><!--end logo_wrapper-->
+            
+            <div id="departments" class="department_toggle">
+                <ul>
+                    <li><a class="indicator-home" href="../index.html">Home</a></li>
+                    
+                    <div class="dropdown">
+                        <li><a href="../mens-lifestyle.html">Men</a><i class="fa fa-plus plus_one" aria-hidden="true"></i></li>
+                        <div class="dropdown-content reveal_one">
+                            <a href="../mens-jackets.html">Jackets</a>
+                            <a href="../mens-bottoms.html">Bottoms</a>
+                            <a href="../mens-tops.html">Tops</a>
+                        </div><!--end dropdown-content-->
+                    </div><!--end dropdown-->
+                    
+                    <div class="dropdown">
+                        <li><a href="../womens-lifestyle.html">Women</a><i class="fa fa-plus plus_two" aria-hidden="true"></i></li>
+                        <div class="dropdown-content reveal_two">
+                            <a href="../womens-jackets.html">Jackets</a>
+                            <a href="../womens-bottoms.html">Bottoms</a>
+                            <a href="../womens-tops.html">Tops</a>
+                        </div><!--end dropdown-content-->
+                    </div><!--end dropdown-->
+                    
+                    <div class="dropdown">
+                        <li><a href="../kids.html">Kids</a><i class="fa fa-plus plus_three" aria-hidden="true"></i></li>
+                        <div class="dropdown-content reveal_three">
+                            <a href="../kids-jackets.html">Jackets</a>
+                            <a href="../kids-bottoms.html">Bottoms</a>
+                            <a href="../kids-tops.html">Tops</a>
+                        </div><!--end dropdown-content-->
+                    </div><!--end dropdown-->
+                </ul>
+            </div><!--end departments-->
+        </div><!--end header-->
+        
+        <div id="container">
+            <div class="login_outer">
+                <div class="login_new_customers">
+                    <div class="login_new_customers_top">
+                        <h1>New Customers</h1>
+                        <p>Creating an account is simple and makes your future shopping visits easier.</p>
+                    </div><!--end login_new_customers_top-->
+                    <div class="login_new_customers_bottom">
+                        <h2>Sign up is FREE</h2>
+                        <p>You can delete your account at any time</p>
+                        <h2>Quicker Checkout</h2>
+                        <p>Super fast easy checkout process since all your ingo is already saved.</p>
+                        <h2>Address Book</h2>
+                        <p>Save shipping addresses for yourself, firends, and family in your personal address book.</p>
+                    </div><!--end login_new_customers_bottom-->
+                </div><!--end login_new_customers-->
+                <div class="login_registered_customers">
+                    <h1>Registered Customers</h1>
+                    <p>If you have an account with us, please enter your email address and password</p>
+                    <form>
+                        <label>
+                            Email<br>
+                            <input class="login_registered_customer_email" type="text"><br>
+                        </label>
+                        <label>
+                            Password<br>
+                            <input class="login_registered_customer_password" type="password">
+                        </label>
+                    </form>
+                    <p class="login_error">Username Or Password Incorrect</p>
+                    <p class="login_successful">Login Successful!</p>
+                </div><!--end login_registered_customers-->
+            </div><!--end login outer-->
+            <div class="login_buttons">
+                <div class="register_button">
+                    <a href="registration.html">Register for free</a>
+                </div>
+                <div class="login_button">
+                    <button >Log in</button>
+                </div>
+            </div>
+        </div><!--end container-->
+        
+        <div id="footer">
+            
+            <div id="social-media">
+                <a href="http://wwww.facebook.com/spyderactivesports" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                
+                <a href="http://www.twitter.com/spyderactive" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+   
+                <a href="http://www.youtube.com/user/spyderactive" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div><!--social-media-->
+            
+            <div id="foot-nav">
+                <ul>
+                    <li><a href="../about-us.html">About</a></li>
+                    <li><a href="../contact-us.html">Contact Us</a></li>
+                </ul>
+            </div><!--end foot-nav-->
+            <div id="copyright">
+                <p>Tom LanFranca &copy;2017</p>
+            </div>
+        </div><!--end footer-->
+        
+        <script src="../scripts/script.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
