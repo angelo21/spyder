@@ -13,28 +13,42 @@ localStorageButton.addEventListener("click", function(e) {
     e.preventDefault();
 
     var mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-    
-    if(localStorageEmail.value === "" && localStoragePassword.value === "" && localStorageConfirm.value === "") {
+
+    //check email for empty input
+    if(localStorageEmail.value === "") {
+        pleaseEnterEmail.style.display = "block";
+    } else {
+        pleaseEnterEmail.style.display = "none";
+    }
+    if(localStorageEmail.value.match(mailFormat) != mailFormat) {
         pleaseEnterEmail.style.display = "block";
     }
-    if(localStorageEmail.value.match(mailFormat) && localStoragePassword.value === "" && localStorageConfirm.value === "") {
+
+    //check if email format is valid
+    if(localStorageEmail.value.match(mailFormat)) {
+
+    localStorage.setItem("email", localStorageEmail.value);
+
+    if(localStoragePassword.value != "" &&                  localStorageConfirm.value != "" && localStorageEmail.value != "") {
+
+    if(localStoragePassword.value ===                       localStorageConfirm.value) {
+        registrationError.style.display = "none"
+        localStorage.setItem("password", localStoragePassword.value);
+        localStorage.setItem("confirmPassword", localStorageConfirm.value);
+        localStorageEmail.value = "";
+        localStoragePassword.value = "";
+        localStorageConfirm.value = "";
         pleaseEnterEmail.style.display = "none";
+        successfulRegistration.style.display = "block";
+    } else {
+        successfulRegistration.style.display = "none";
         registrationError.style.display = "block"
     }
-    if(localStoragePassword.value !== localStorageConfirm.value) {
-        pleaseEnterEmail.style.display = "none";
+    } else {
         registrationError.style.display = "block";
     }
-    if(localStoragePassword.value !== "" && localStorageConfirm.value !== "" && localStoragePassword.value === localStorageConfirm.value) {
-        pleaseEnterEmail.style.display = "none";
-        registrationError.style.display = "none";
-        successfulRegistration.style.display = "block";
-        localStorageEmail.value = "";
-        localStorageConfirm.value = "";
-        localStoragePassword.value = "";
     }
 });
-
 
 
 
